@@ -26,6 +26,6 @@ func AddTodo(title string, description string) (string, error) {
 		fmt.Println("Error in inserting todo")
 		return "", err
 	}
-	return "Todo Successfully Added", err
+	return "Todo Successfully Added", nil
 
 }

@@ -20,7 +20,7 @@ var (
 )
 
 func init() {
-	CreateTodo.Flags().StringVarP(&title, "title", "t", "", "Title of the string ")
+	CreateTodo.Flags().StringVarP(&title, "title", "t", "", "Title of the Todo ")
 	CreateTodo.Flags().StringVarP(&description, "description", "d", "", "Description")
 	CreateTodo.MarkFlagRequired("title")
 }
